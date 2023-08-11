@@ -1,0 +1,90 @@
+html {
+    background: linear-gradient(-45deg, rgb(245, 107, 234),rgb(72, 184, 236),rgba(245, 245, 88, 0.855),rgb(61, 216, 61));
+    background-size: 400% 400%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: gradient 15s ease infinite; 
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+/** Header **/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    font-size: 75px;
+    margin-bottom: 0;
+}
+/** Main Section **/
+#main-section {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    margin: 0px 175px 100px 175px;
+    background-color: rgba(128,128,128,0.7);
+    border: solid 2px black;
+    border-radius: 7px;
+}
+
+/** Settings **/
+.settings {
+    padding: 150px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.settings button, #color-btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    font-size: small;
+    font-weight: bold;
+    background: #d3d3d3;
+}
+
+#size-value {
+    font-weight: bold;
+}
+
+#settings-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    width: 100px;
+    background: #d3d3d3;
+    border-radius: 7px;
+}
+#settings-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 7px;
+    height: 18px;
+    background: black;
+}
+/** Grid **/
+#grid {
+    background-color: aliceblue;
+    width: 550px;
+    height: 550px;
+    margin: 75px 0px 0px 100px;
+    display: grid;
+}
